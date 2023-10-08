@@ -11,7 +11,7 @@
   <header class="mb-5">
     <div id="panelprincipal" class="panel">
       <nav class="navbar fixed-top barra back navbar-expand-lg navbar-dark fixed-top">
-        <img id="logo" src="logo.png" height="55" width="55" />
+        <img id="logo" src="img/logo.png" height="55" width="55" />
         <a id="nombre" class="navbar-brand" href="index.html">Grupo Mecatrónica </a>
         
       </nav>
@@ -29,6 +29,16 @@
           </div>
           <div class="col-md-6">
             <div class="mb-4">
+              <div class="mb-3">
+                <label for="imagenSelect" class="form-label fs-5 fw-bold">Elige un Lienzo: </label>
+                <select class="form-select form-select-lg" name="imagenSelect" id="imagenSelect">
+                  <option selected value="blanco">En blanco</option>
+                  <option value="pikachu">Pikachu</option>
+                  <option value="mike">Mike Wazowski</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-4">
               <label for="colorSelector" class="form-label fs-5 fw-bold">Selecciona un color:</label>
               <input type="color" class="form-control form-control-color" id="colorSelector" aria-describedby="colorHelpId">
             </div>
@@ -36,7 +46,7 @@
               <label for="tamanoSelector" class="form-label fs-5 fw-bold">Selecciona el tamaño del pincel:</label>
               <div class="d-flex align-items-center">
                 <input type="range" class="form-range flex-grow-1" min="1" max="20" step="1" value="5" id="tamanoSelector" aria-describedby="tamanoHelpId">
-                <span id="tamanoLabel" class="fs-5 ms-3">Tamaño del pincel: 5</span>
+                <span id="tamanoLabel" class="fs-5 ms-3">5</span>
               </div>
             </div>
             <button type="button" class="btn fs-5 fw-bold" onclick="limpiarCanvas()">Limpiar Lienzo</button>
@@ -51,7 +61,7 @@
         <center>
           <a href="https://www.instagram.com/grupomecatronica.utp/" target="_blank">
             <strong>
-              <img src="ig.png" alt="" width="50px" height="50px">
+              <img src="img/ig.png" alt="" width="50px" height="50px">
             </strong>
           </a> &nbsp;&nbsp;&nbsp;&nbsp;
         </center>
