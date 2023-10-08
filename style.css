@@ -1,0 +1,142 @@
+/* Estilo para el contenedor principal */
+#panelprincipal {
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+/* Estilo para la barra de navegación */
+.navbar {
+  background-color: #12F7AD;
+  /* Reemplaza con el color deseado */
+  border: dashed 1px black;
+  margin-bottom: 5%;
+}
+
+/* Estilo para el logo */
+#logo {
+  margin-right: 10px;
+  margin-left: 15px;
+  border-radius: 25px;
+  padding: 5px;
+  background-color: white;
+}
+
+/* Estilo para el nombre del sitio web */
+#nombre {
+  font-size: 28px;
+}
+
+/* Estilo para el botón del menú desplegable */
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+
+/* Estilo para los elementos de la lista del menú de navegación */
+.navbar-nav .nav-item {
+  margin-right: 15px;
+}
+
+/* Estilo para los enlaces de la lista del menú de navegación */
+.navbar-nav .nav-link {
+  color: #ffffff77;
+  font-size: 16px;
+  transition: color 0.3s;
+  /* Agregamos una transición suave para el cambio de color */
+}
+
+/* Cambiar el color de los enlaces cuando se hacen hover */
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+  /* Cambiar el color al hacer hover */
+}
+
+/* Estilo para el contenedor fluido */
+.container-fluid {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo para el logotipo en la barra de navegación */
+.navbar-brand {
+  font-size: 28px;
+  color: #03082C;
+  text-decoration: solid;
+  white-space: nowrap;
+  /* Evita que el texto se divida en varias líneas */
+  overflow: hidden;
+  /* Oculta el exceso de texto que no cabe en el contenedor */
+  text-overflow: ellipsis;
+  /* Agrega puntos suspensivos (...) para indicar que hay más texto */
+}
+
+/* Estilo para el logotipo en la barra de navegación cuando se hace hover */
+.navbar-brand:hover {
+  color: #007bff;
+}
+
+h2 {
+  margin-left: 15px;
+  margin-top: 12px;
+  font-size: 25px;
+}
+
+.canvas-container {
+  width: 100%;
+  max-width: 800px;
+  /* Define un ancho máximo para el canvas */
+}
+
+#miCanvas {
+  width: 100%;
+  border: 1px solid #000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  /* Agrega el sombreado aquí */
+}
+
+
+label {
+  font-size: 18px;
+}
+
+/* Estilo personalizado para el botón "Limpiar Lienzo" */
+.btn {
+  background-color: #12f7ad;
+  background-image: linear-gradient(160deg, #12f7ad 0%, #03082c 50%, #ffffff 100%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover{
+  background-color: #007bff;
+}
+
+/* Estilos para elementos con la clase "pies" (pie de página) */
+.pies {
+  color: white;
+  text-align: center;
+  background-color: #03082C;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.pies img {
+  margin-top: 10px;
+}
+
+/* Estilos para enlaces dentro del pie de página */
+.pies a {
+  text-decoration: none;
+}
+
+/* Estilos para texto en negrita dentro del pie de página */
+.pies medium {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}

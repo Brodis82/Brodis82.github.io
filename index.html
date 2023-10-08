@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Dibujo en Canvas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="mb-5">
+    <div id="panelprincipal" class="panel">
+      <nav class="navbar fixed-top barra back navbar-expand-lg navbar-dark fixed-top">
+        <img id="logo" src="logo.png" height="55" width="55" />
+        <a id="nombre" class="navbar-brand" href="index.html">Grupo Mecatrónica </a>
+        
+      </nav>
+    </div>
+  </header>
+  <main class="mt-5">
+    <h2>Ejemplo Sencillo: Programación Web</h2>
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="canvas-container">
+              <canvas id="miCanvas"></canvas>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-4">
+              <label for="colorSelector" class="form-label fs-5 fw-bold">Selecciona un color:</label>
+              <input type="color" class="form-control form-control-color" id="colorSelector" aria-describedby="colorHelpId">
+            </div>
+            <div class="mb-4">
+              <label for="tamanoSelector" class="form-label fs-5 fw-bold">Selecciona el tamaño del pincel:</label>
+              <div class="d-flex align-items-center">
+                <input type="range" class="form-range flex-grow-1" min="1" max="20" step="1" value="5" id="tamanoSelector" aria-describedby="tamanoHelpId">
+                <span id="tamanoLabel" class="fs-5 ms-3">Tamaño del pincel: 5</span>
+              </div>
+            </div>
+            <button type="button" class="btn fs-5 fw-bold" onclick="limpiarCanvas()">Limpiar Lienzo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <footer class="pies">
+      <div class="container text-center">
+        <center>
+          <a href="https://www.instagram.com/grupomecatronica.utp/" target="_blank">
+            <strong>
+              <img src="ig.png" alt="" width="50px" height="50px">
+            </strong>
+          </a> &nbsp;&nbsp;&nbsp;&nbsp;
+        </center>
+        <br>
+        <medium class="fs-5 fw-bold">Desarrollada por: José Jaén</medium>
+        <br> <br>
+      </div>
+    </footer>
+  </footer>
+  <script src="js.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</body>
+</html>
